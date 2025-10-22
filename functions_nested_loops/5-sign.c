@@ -2,8 +2,10 @@
 
 /**
 * print_sign - Entry point
-* prints the sign of a number
-* Returns 1 and prints + if n is greater than zero
+* @n: character to check
+*
+* Return: 1 if c is lowercase or uppercase, 0 otherwise
+*
 */
 
 int print_sign(int n)
