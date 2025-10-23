@@ -1,12 +1,29 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* print_last_digit - Entry point
-* @i: character to check
+*jack_bauer - Entry point
 *
-* Return: last digit
+*
+*
+*
 *
 */
 
 void jack_bauer(void)
 
+{
+int hh, mm;
+for (hh = 0 ; hh <= 23 ; hh++)
+{
+	for (mm = 0 ; mm <= 59 ; mm++)
+	{
+	_putchar((hh / 10) + '0');
+	_putchar((hh % 10) + '0');
+	_putchar(':');
+	_putchar((mm / 10) + '0');
+	_putchar((mm % 10) + '0');
+	_putchar('\n');
+	}
+}
+}
