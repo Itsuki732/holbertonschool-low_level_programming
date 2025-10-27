@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
-* int mul - Entry point
+* mul - Entry point
 * @a: character to check
 * @b: char
-* Return: 0
+*
+* Return: r
 *
 */
 
 int mul(int a, int b)
 {
 	int r;
+
 	r = a * b;
 return (r);
 }
