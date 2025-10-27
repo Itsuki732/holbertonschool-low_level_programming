@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_square - Prints a squareusing the character #.
+*print_triangle - Prints a squareusing the character #.
 *@size: The size of the square.
 *
 *Écrivez une fonction qui affiche un carré, suivi d'un retour à la ligne.
@@ -22,7 +22,7 @@ void print_triangle(int size)
 
 	for (o = 1; o <= size; o++)
 	{
-		for (i = size - o;i >= 0; i--)
+		for (i = size - o; i > 0; i--)
 		{
 			_putchar(' ');
 		}
