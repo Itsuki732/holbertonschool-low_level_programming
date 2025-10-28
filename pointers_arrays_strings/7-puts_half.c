@@ -8,8 +8,8 @@
 
 void puts_half(char *str)
 {
-	int i; /*long ligne*/
-	int o; /*position ligne*/
+	int i = 0; /*long ligne*/
+	int o = 0; /*position ligne*/
 	int p; /*midle ligne*/
 
 	while (str[o++])
