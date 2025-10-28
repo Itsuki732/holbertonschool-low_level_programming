@@ -20,9 +20,13 @@ void puts_half(char *str)
 	p = i / 2;
 
 	if ((i % 2) == 0)
-	p = i / 2;
+	{
+		p = i / 2;
+	}
 	else
-	p = (i + 1) / 2;
+	{
+		p = (i + 1) / 2;
+	}
 
 	for (o = p; o < i; o++)
 	{
