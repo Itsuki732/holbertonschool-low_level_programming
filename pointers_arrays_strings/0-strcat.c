@@ -1,10 +1,15 @@
 #include "main.h"
 
 /**
-* _strcat - Entry point
+*_strcat - Écrivez une fonction qui concatène deux chaînes.
+*@dest: rrrr
+*@src: rrrr
 *
+*Cette fonction ajoute la chaîne src à la chaîne dest, écrasant l'octet
+*nul de fin (\0) à la fin de dest, puis ajoute un octet nul de fin.
+*Renvoie un pointeur vers la chaîne résultante dest.
 *
-* Return:
+*Return: chaine dans dest
 */
 
 char *_strcat(char *dest, char *src)
@@ -22,5 +27,5 @@ char *_strcat(char *dest, char *src)
 		dest[o++] = src[i];
 	}
 
-	return(dest);
+	return (dest);
 }
