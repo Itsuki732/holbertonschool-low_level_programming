@@ -55,6 +55,6 @@ while (s[index] != '\0')
 	sign = -1;
 	/* Construire le nombre */
 	for (i = first; i <= last; i++)
-	res = res * 10 + (s[i] - '0');
-	return (res * sign);
+	res = res * 10 + (s[i] - '0') * sign;
+	return (res );
 }
