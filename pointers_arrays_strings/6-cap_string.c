@@ -18,9 +18,9 @@ int i = 0;
 
 while (string[i] != '\0')
 {
-    if (string[0] >= 'a' &&  string[0] <= 'z')
+	if (string[0] >= 'a' &&  string[0] <= 'z')
 	{
-	    string[i] -= 32;
+		string[i] -= 32;
 	}
 
 	if (string[i] == ' ' || string[i] == '\t' || string[i] == '\n' ||
@@ -31,7 +31,7 @@ while (string[i] != '\0')
 	{
 		if (string[i + 1] >= 'a' &&  string[i + 1] <= 'z')
 		{
-		    string[i + 1] -= 32;
+			string[i + 1] -= 32;
 		}
 	}
 	i++;
