@@ -32,27 +32,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (size1 = 0; s1[size1] != '\0'; size1++)
 	{
 	}
-
 	for (size2 = 0; s2[size2] != '\0'; size2++)
 	{
 	}
-
 	if (n >= size2)
 		size3 = size2;
 	else
 		size3 = n;
-
 	new_str = malloc(sizeof(char) * (size1 + size3 + 1));
 
 	if (new_str == NULL)
 		return (NULL);
-
 	for (index1 = 0; s1[index1] != '\0'; index1++)
 		new_str[index1] = s1[index1];
-
 	for (index2 = 0; index2 < size3; index2++)
 		new_str[index1 + index2] = s2[index2];
-
 	new_str[size1 + size3] = '\0';
 
 return (new_str);
