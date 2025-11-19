@@ -28,7 +28,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", separator);
 			}
-		
 		}
 	}
 	else
@@ -37,11 +36,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			int number = va_arg(ap, int);
 
-			printf("%d", number);		
+			printf("%d", number);
 		}
 	}
-
 	printf("\n");
-
 va_end(ap);
 }
