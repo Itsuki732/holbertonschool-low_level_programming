@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			char* strings = va_arg(ap, char*);
+			char *strings = va_arg(ap, char*);
 
 			if (strings != NULL)
 			{
@@ -42,7 +42,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			char* strings = va_arg(ap, char*);
+			char *strings = va_arg(ap, char*);
 
 			printf("%s", strings);
 		}
