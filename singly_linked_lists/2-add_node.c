@@ -16,16 +16,13 @@ list_t *add_node(list_t **head, const char *str)
 	char *str_dup;
 	unsigned int len = 0;
 
-	/* Check if the input string is NULL */
 	if (str == NULL)
 		return (NULL);
 
-	/* Allocate memory for the new node */
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return (NULL);
 
-	/* Duplicate the input string */
 	str_dup = strdup(str);
 	if (str_dup == NULL)
 	{
@@ -33,16 +30,13 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	/* Calculate the length of the string */
 	while (str[len])
 		len++;
 
-	/* Populate the new node's members */
 	new_node->str = str_dup;
 	new_node->len = len;
-	new_node->next = *head; /* Point the new node to the current head */
+	new_node->next = *head;
 
-	/* Update the head to point to the new node */
 	*head = new_node;
 
 	return (new_node);
